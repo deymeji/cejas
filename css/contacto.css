@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: NUnito, sans-serif;
+  color:#707070; 
+  text-align: center;
+}
+h1{
+color: #E16D65;
+}
+p{
+font-family: Lucida Calligraphy;
+font-size: 17px;
+}
+
+header{
+    height: 110px;
+    border-top: 8px solid #E16D65;
+    display: flex;
+   }
+     header #top{
+      width: 900px;
+      margin: auto;
+      display: flex;
+     justify-content: space-between;
+     }
+     header #top a{
+         text-decoration: none;
+     }
+     header #marca{
+         color:#E16D65;
+         font-size: 20px;
+         font-weight: 600;
+         padding: 20px 30px 20px 0px;
+     }
+     #top nav{
+         display: flex;
+         line-height: 40px;
+        
+     }
+     #top nav a{
+         padding: 20px 0px 20px 30px;
+         font-size: 16px;
+      color: #707070;
+     }
+     #top nav a:hover{
+       color: #E16d65;
+     }
+     /*hero*/
+     #hero{
+         height: 450px;
+         background-image: url(../imagen/th.jpg)  ;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover ;
+     }
+     /*fin hero*/
+    
+     main{
+        min-height:200px;
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+     }
+     main article{
+         width:400px;
+         padding-left: 20px;
+         margin: 15px;
+         justify-content: center;
+         
+     }
+     form{
+         text-align: center;
+     }
+     .control{
+    width: 30%;
+    padding: 10px;
+   border: 2px solid rgb(61, 60, 60);
+    margin-bottom: 16px;
+    
+     }
+    input, textarea{
+        width: 30%;
+        padding: 7px;
+        border: 2px solid rgb(61, 60, 60);
+        font-size: 15px;
+    }
+   
+    #boton{
+        background:#E16d65;
+        color: white;
+        padding: 12px;
+    }
+     img{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+    }
+    #contenedor{
+        
+        min-height: 200px;
+        display: flex;
+        }
+    #footer{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    #fin nav{
+        padding: 20px 0px 20px 30px;
+        text-align: center;
+       
+        
+    }
+    #fin nav a{
+    padding: 20px 20px 0px 30px;
+    font-size: 16px;
+    color: #707070;
+    text-decoration: none;
+   
+
+ }
+    #fin nav a:hover{
+        color: #E16D65;
+        
+    }
+    

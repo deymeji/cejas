@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: NUnito, sans-serif;
+  color:#707070; 
+  text-align: center;
+}
+h1{
+      
+    text-align: center;
+    font-size: 40px;
+    color: #E16D65;
+}
+
+p{font-family: Lucida Calligraphy;
+font-size: 17px;
+}
+header{
+    height: 110px;
+    border-top: 8px solid #E16D65;
+    display: flex;
+    
+   }
+     header #top{
+      width: 900px;
+      margin: auto;
+      display: flex;
+     justify-content: space-between;
+     }
+     header #top a{
+         text-decoration: none;
+     }
+     header #marca{
+         color:#E16D65;
+         font-size: 20px;
+         font-weight: 600;
+         padding: 20px 30px 20px 0px;
+     }
+     #top nav{
+         display: flex;
+         line-height: 40px;
+        
+     }
+     #top nav a{
+         padding: 20px 0px 20px 30px;
+         font-size: 16px;
+      color: #707070;
+     }
+     #top nav a:hover{
+       color: #E16d65;
+     }
+     /*hero*/
+     #hero{
+         height: 350px;
+         background-image: url(../imagen/OIP\ \(2\).jpg )  ;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover ;
+     }
+     /*fin hero*/
+    
+     main{
+        min-height:200px;
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+     }
+     main article{
+         width:400px;
+         padding-left: 20px;
+         margin: 15px;
+         justify-content: center;
+         
+     }
+     
+    .contenedor-imagenes .imagen{
+        width: 32%;
+        position: relative;
+        height: 400px;
+        margin-bottom: 5px;
+        box-shadow: 0px 0px 3px 0px black(0, 0, 0, .75);
+    }
+  .imagen img{
+  width: 500%;
+  height: 70%;
+  object-fit: cover;
+  }
+  #contenedor{
+      
+      min-height: 200px;
+      display: flex;
+    }
+    #footer{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    #fin nav{
+        padding: 20px 0px 20px 30px;
+        text-align: center;
+        
+        
+    }
+    #fin nav a{
+        padding: 20px 20px 0px 30px;
+        font-size: 16px;
+        color: #707070;
+        text-decoration: none;
+        
+        
+    }
+    #fin nav a:hover{
+        color: #f1aca7;
+        
+    }
+    
+    img{
+       height: 30px;
+       width: 30px;
+       margin: 10px;
+   }
