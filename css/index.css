@@ -3,19 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-  font-family: NUnito, sans-serif;
-  color:#707070; 
-  text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-family: NUnito, sans-serif;
+    color:#525252; 
+    text-align: center;
 }
 h1{
-      
     text-align: center;
     font-size: 40px;
     color: #E16D65;
 }
-
 p{font-family: Lucida Calligraphy;
 font-size: 17px;
 }
@@ -24,106 +22,128 @@ header{
     border-top: 8px solid #E16D65;
     display: flex;
     
-   }
-     header #top{
-      width: 900px;
-      margin: auto;
-      display: flex;
-     justify-content: space-between;
-     }
-     header #top a{
-         text-decoration: none;
-     }
-     header #marca{
-         color:#E16D65;
-         font-size: 20px;
-         font-weight: 600;
-         padding: 20px 30px 20px 0px;
-     }
-     #top nav{
-         display: flex;
-         line-height: 40px;
-        
-     }
-     #top nav a{
-         padding: 20px 0px 20px 30px;
-         font-size: 16px;
-      color: #707070;
-     }
-     #top nav a:hover{
-       color: #E16d65;
-     }
-     /*hero*/
-     #hero{
-         height: 350px;
-         background-image: url(../imagen/OIP\ \(2\).jpg )  ;
-         background-repeat: no-repeat;
-         background-position: center center;
-         background-size: cover ;
-     }
-     /*fin hero*/
+}
+header #top{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+header #marca{
+    color:#E16D65;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 30px 20px 0px;
+}
+#top nav {
+    padding: 20px 0px 20px 30px;
+    text-align: center;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    padding: 20px 20px 0px 30px;
+    font-size: 16px;
+    color: #525252;
+    display: inline-block;
+}
+#top nav a:hover{
+    color: #E16D65;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(1, 59, 59);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+    /*hero*/
+#hero{
+    height: 350px;
+    background-image: url(../imagen/pes.jpg)  ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover ;
+}
+/*fin hero**/
+
+#hero2{
+    height: 350px;
+    background-image: url(../imagen/diseño.jpg)  ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover ;
+   
+}
+
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#fin nav{
+    padding: 20px 0px 20px 30px;
+    text-align: center;
+}
+#fin nav a{
+    padding: 20px 20px 0px 30px;
+    font-size: 16px;
+    color: #707070;
+    text-decoration: none;
+}
+#fin nav a:hover{
+    color: #E16D65;
+}
+#redes a{
+    color:#E16D65 ;
+    margin: 20px;
     
-     main{
-        min-height:200px;
-        width: 1100px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-     }
-     main article{
-         width:400px;
-         padding-left: 20px;
-         margin: 15px;
-         justify-content: center;
-         
-     }
-     
-    .contenedor-imagenes .imagen{
-        width: 32%;
-        position: relative;
-        height: 400px;
-        margin-bottom: 5px;
-        box-shadow: 0px 0px 3px 0px black(0, 0, 0, .75);
-    }
-  .imagen img{
-  width: 500%;
-  height: 70%;
-  object-fit: cover;
-  }
-  #contenedor{
-      
-      min-height: 200px;
-      display: flex;
-    }
-    #footer{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        
-    }
-    #fin nav{
-        padding: 20px 0px 20px 30px;
-        text-align: center;
-        
-        
-    }
-    #fin nav a{
-        padding: 20px 20px 0px 30px;
-        font-size: 16px;
-        color: #707070;
-        text-decoration: none;
-        
-        
-    }
-    #fin nav a:hover{
-        color: #f1aca7;
-        
-    }
+}
+#fin1{
     
-    img{
-       height: 30px;
-       width: 30px;
-       margin: 10px;
-   }
+    border-top: 8px solid #E16D65;
+    display: flex;
+}
+
+/*Menu reponsive*/
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E16D65;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

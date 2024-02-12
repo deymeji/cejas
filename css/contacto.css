@@ -3,133 +3,188 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-  font-family: NUnito, sans-serif;
-  color:#707070; 
-  text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-family: NUnito, sans-serif;
+    color:#525252; 
+    text-align: center;
 }
 h1{
-color: #E16D65;
+    color: #E16D65;
 }
 p{
-font-family: Lucida Calligraphy;
-font-size: 17px;
+    font-family: Lucida Calligraphy;
+    font-size: 17px;
 }
-
 header{
     height: 110px;
     border-top: 8px solid #E16D65;
     display: flex;
-   }
-     header #top{
-      width: 900px;
-      margin: auto;
-      display: flex;
-     justify-content: space-between;
-     }
-     header #top a{
-         text-decoration: none;
-     }
-     header #marca{
-         color:#E16D65;
-         font-size: 20px;
-         font-weight: 600;
-         padding: 20px 30px 20px 0px;
-     }
-     #top nav{
-         display: flex;
-         line-height: 40px;
-        
-     }
-     #top nav a{
-         padding: 20px 0px 20px 30px;
-         font-size: 16px;
-      color: #707070;
-     }
-     #top nav a:hover{
-       color: #E16d65;
-     }
-     /*hero*/
-     #hero{
-         height: 450px;
-         background-image: url(../imagen/th.jpg)  ;
-         background-repeat: no-repeat;
-         background-position: center center;
-         background-size: cover ;
-     }
-     /*fin hero*/
+}
+header #top{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     
-     main{
-        min-height:200px;
-        width: 1100px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-     }
-     main article{
-         width:400px;
-         padding-left: 20px;
-         margin: 15px;
-         justify-content: center;
-         
-     }
-     form{
-         text-align: center;
-     }
-     .control{
-    width: 30%;
-    padding: 10px;
-   border: 2px solid rgb(61, 60, 60);
-    margin-bottom: 16px;
-    
-     }
-    input, textarea{
-        width: 30%;
-        padding: 7px;
-        border: 2px solid rgb(61, 60, 60);
-        font-size: 15px;
-    }
-   
-    #boton{
-        background:#E16d65;
-        color: white;
-        padding: 12px;
-    }
-     img{
-        height: 30px;
-        width: 30px;
-        margin: 10px;
-    }
-    #contenedor{
-        
-        min-height: 200px;
-        display: flex;
-        }
-    #footer{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        
-    }
-    #fin nav{
-        padding: 20px 0px 20px 30px;
-        text-align: center;
-       
-        
-    }
-    #fin nav a{
+}
+header #marca{ 
+    color:#E16D65;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 30px 20px 0px;
+}
+#top nav {
+    padding: 20px 0px 20px 30px;
+    text-align: center;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
     padding: 20px 20px 0px 30px;
     font-size: 16px;
-    color: #707070;
-    text-decoration: none;
-   
+    color: #525252;
+    display: inline-block;
+}
+    
+#top nav a:hover{
+    color: #E16D65;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(1, 59, 59);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*hero*/
+#hero{
+    height: 350px;
+    background-image: url(../imagen/th.jpg)  ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover ;
+}
+/*fin hero*/
 
- }
-    #fin nav a:hover{
-        color: #E16D65;
+main{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height:200px;
+}
+main article{
+    width:400px;
+    padding-left: 20px;
+    margin: 15px;
+    justify-content: center;
+}
+form{
+    text-align: center;
+}
+.control{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #525252;;
+    margin-bottom: 16px;
+}
+input, textarea{
+    width: 30%;
+    padding: 7px;
+    border: 2px solid #525252;
+    font-size: 15px;
+}
+#boton{
+    background:#E16d65;
+    color: white;
+    padding: 12px;
+}
+img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+#contenedor{
+    min-height: 200px;
+    display: flex;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#fin nav{
+    padding: 20px 0px 20px 30px;
+    text-align: center;
+}
+#fin nav a{
+    padding: 20px 20px 0px 30px;
+    font-size: 16px;
+    color: #525252;;
+    text-decoration: none;
+}
+#fin nav a:hover{
+    color: #E16D65;
+}
+#redes a{
+    
+    margin: 20px;
+    
+}
+#fin1{
+    
+    border-top: 8px solid #E16D65;
+    display: flex;
+}   
+
+
+@media (min-width: 952px){
+    .marca{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }   
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E16D65;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
         
     }
-    
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+

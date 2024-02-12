@@ -3,114 +3,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: NUnito, sans-serif;
+    color:#525252;
+    text-align: center;
 }
-body{
-  font-family: NUnito, sans-serif;
-  color:rgb(64, 63, 63); 
-  
-  text-align: center;
-}
+
 h1{
     color: rgb(64, 63, 63);
-     font-family: Lucida Calligraphy;
-     font-size: 24px;
-        
+    font-family: Lucida Calligraphy;
+    font-size: 24px;
 }
 h2{
     color: #E16D65;
-    }
+}
 header{
     height: 110px;
     border-top: 8px solid #E16D65;
     display: flex;
-   }
+}
 header #top{
-      width: 900px;
-      margin: auto;
-      display: flex;
-     justify-content: space-between;
-    
-     }
- header #top a{
-         text-decoration: none;
-     }
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
 header #marca{
     color:#E16D65;
-     font-size: 20px;
-     font-weight: 600;
-     padding: 20px 30px 20px 0px;
-    }
-    #top nav{
-        display: flex;
-        line-height: 40px;
-       
-    }
-    #top nav a{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 30px 20px 0px;
+}
+#top nav {
         padding: 20px 0px 20px 30px;
-        font-size: 16px;
-        color: #707070;;
-    }
-    #top nav a:hover{
-        color:#f1584d;
-    }
-    /*hero*/
-    #hero{
-        height: 350px;
-        background-image: url(../imagen/OIP\ \(2\).jpg )  ;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover ;
-    }
+        text-align: center;
+}      
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    padding: 20px 20px 0px 30px;
+    font-size: 16px;
+    color: #525252;
+    display: inline-block;
+}
+#top nav a:hover{
+    color:#E16D65;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(1, 59, 59);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*hero*/
+#hero{
+    height: 350px;
+    background-image: url(../imagen/OIP\ \(2\).jpg )  ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover ;
+}
     /*fin hero*/
-   
-    main{
-       min-height:200px;
-       width: 1100px;
-       margin: auto;
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       
-    }
-    main article{
-        width:400px;
-        padding-left: 20px;
-        margin: 15px;
-        justify-content: center;
-        
-    }
-    imagen{
-       height: 70px;
-       width: 70px;
-       margin: 10px;
-    }
-    
-    .contenedor-imagenes{
-        display: flex;
-        width: 85%;
-        margin: auto;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        border-radius: 3px;
-    }
-    .contenedor-imagenes .imagen{
-        width: 32%;
-        position: relative;
-        height: 400px;
-        margin-bottom: 5px;
-        box-shadow: 0px 0px 3px 0px black(0, 0, 0, .75);
-    }
-  .imagen img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-   
-  #contenedor{
-        
-    min-height: 200px;
+main{
+  
+    margin: auto;
+    flex-wrap: wrap;
     display: flex;
-    }
+    justify-content: space-evenly;
+    
+}
+main article{
+    width: 310px;
+    padding-left: 20px;
+    margin: 15px;
+    box-shadow: 0px 5px 8px #E16d65;
+}
+contenedor-2 .imagen{
+    position: relative;
+}
+.imagen img{
+    width: 70%;
+    height: 70%;
+    margin: 10px;
+}
+ 
+
+
 #footer{
     display: flex;
     justify-content: space-between;
@@ -119,26 +107,58 @@ header #marca{
 }
 #fin nav{
     padding: 20px 0px 20px 30px;
-    text-align: center;
-   
-    
+    text-align: center; 
 }
 #fin nav a{
 padding: 20px 20px 0px 30px;
 font-size: 16px;
-color:rgb(64, 63, 63);
+color:#525252;
 text-decoration: none;
-
-
 }
 #fin nav a:hover{
-    color:#f1584d;
+    color:#E16D65;
     
 }
-img{
-    height: 30px;
-    width: 30px;
-    margin: 10px;
+#redes a{
+    
+    margin: 20px;
+    
 }
+
+#fin1{
+    
+    border-top: 8px solid #E16D65;
+    display: flex;
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E16D65;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
    
-    
+}
